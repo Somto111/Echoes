@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Users</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f8f9fa;">
+
+    <h1 style="text-align: center; color: #1b7f6f;">Registered Users</h1>
+
+    <div style="max-width: 600px; margin: 0 auto;">
+        {% for user in users %}
+            <div style="background-color: white; color: #333; padding: 15px; margin-bottom: 10px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <strong>{{ user.name }}</strong> <br>
+                <span style="color: #555;">{{ user.email }}</span>
+            </div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>

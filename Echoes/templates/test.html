@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Test login form</title>
+</head>
+<body>
+    <div>
+        <form action="{{ url_for('login') }}" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required> <br>
+            <label for="email">Email</label>
+            <input type="email" id="email"  name="email" placeholder="Enter your email"> <br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+
+
+</body>
+</html>
